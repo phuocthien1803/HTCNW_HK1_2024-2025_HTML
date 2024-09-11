@@ -1,0 +1,12 @@
+p {
+  text-align: center;
+  color: red;
+}
+#element_id {
+  text-align: center;
+  color: blue;
+}
+.center {
+  text-align: center;
+  color: blueviolet;
+}

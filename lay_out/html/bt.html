@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lay out trang web sinh viên</title>
+    <style>
+      * {
+        margin: 0px auto;
+        padding: 0px;
+      }
+      .wrapper {
+        width: 1089px;
+        height: 800px;
+        margin: 0px auto;
+        background-color: yellow;
+        border: 1px solid   red;
+      }
+      .top_menu {
+         width: 1089px;
+        height: 70px;
+        margin: 0px auto;
+        background-color: yellow;
+      }
+      header {
+         width: 1089px;
+        height: 200px;
+        margin: 0px auto;
+        background-color: rgb(70, 200, 89);
+      }
+
+
+      .content{
+         width: 1089px;
+        height: 450px;
+        margin: 0px auto;
+        background-color: #82287974;
+        overflow: hidden;
+      }
+      .left-menu{
+         width: 20%;
+        height: 450px;
+        background-color: aquamarine;
+        float:left;
+
+      }
+      .content-l{
+         width: 40%;
+        height: 450px;
+        background-color: rgb(0, 255, 38));
+        float: left;
+      }
+      .content-r{
+         width: 40%;
+        height: 450px;
+        background-color: rgb(24, 160, 168);
+        float: left;
+      }
+      footer {
+         width: 1089px;
+        height: 20px;
+        margin: 0px auto;
+        background-color: yellow;
+      }
+      .menu li{
+        width: 150px;
+        height: 50px;
+        background-color: rgb(157, 34, 157);
+        float: left;
+        text-indent: 0px;
+        line-height: 30px;
+        list-style-type: none;
+        border: 1px solid rgb(22, 185, 203);
+      }
+      .menu li:hover {
+        background-color: aliceblue;
+      }
+      li a{
+        text-decoration: none;
+      }
+      li:hover>a{
+        color: black;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="top_menu">
+        <ul class="menu">
+          <li><a href="">Giới Thiệu</a></li>
+          <li><a href="">Đào Tạo</a></li>
+          <li><a href="">Tuyển Sinh</a></li>
+          <li><a href="">Nhập Học 2024</a></li>
+          <li><a href="">Sinh viên</a></li>
+          <li><a href="">Văn Bằng</a></li>
+        </ul>
+      </div>
+      <header>header</header>
+      <div class="content">
+        <div class="left-menu">
+          <ul class="left-menu">
+            <li><a href="">Item</a></li>
+            <li><a href="">Item</a></li>
+            <li><a href="">Item</a></li>
+            <li><a href="">Item</a></li>
+            <li><a href="">Item</a></li>
+            <li><a href="">Item</a></li>
+          </ul>
+        </div>
+        <div class="content-l">nội dung bên trái</div>
+        <div class="content-r">nội dung phải</div>
+      </div>
+      <footer>chân trang web</footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang Tuyển Sinh IUH</title>
+  </head>
+  <style>
+    * {
+      padding: 0px;
+      margin: 0px auto;
+    }
+
+    .wrapper {
+      width: 1089px;
+      height: 860px;
+      background-color: antiquewhite;
+      border: solid red;
+      border-width: 5px;
+    }
+
+    nav {
+      width: 1089px;
+      height: 60px;
+      background-color: white;
+    }
+
+    header {
+      width: 1089px;
+      height: 200px;
+      background-color: rgb(21, 201, 60);
+    }
+
+    .content {
+      width: 1089px;
+      height: 500px;
+      background-color: rgb(173, 158, 20);
+    }
+
+    .menu-left {
+      width: 20%;
+      height: 500px;
+      background-color: rgb(3, 82, 81);
+      float: left;
+    }
+
+    .content-left {
+      width: 40%;
+      height: 500px;
+      background-color: white;
+      float: left;
+    }
+
+    .content-right {
+      width: 40%;
+      height: 500px;
+      background-color: white;
+      float: left;
+    }
+
+    footer {
+      width: 1089px;
+      height: 150px;
+      background-color: rgb(26, 17, 215);
+    }
+
+    .top-menu li {
+      float: left;
+      width: 217.6px;
+      background-color: #aaa1a1;
+      line-height: 60px;
+      text-align: center;
+      list-style: none;
+    }
+
+    .top-menu li a {
+      color: #1c279e;
+      font-size: 18px;
+      font-weight: bold;
+      text-decoration: none;
+      display: block;
+      height: 100%;
+      line-height: 60px;
+    }
+
+    .top-menu li a:hover {
+      color: #16b1cc;
+      /* Thay đổi màu xanh khi hover (Green) */
+    }
+
+    li a {
+      text-decoration: none;
+      font-weight: bolder;
+    }
+
+    .top-menu li:hover {
+      background-color: antiquewhite;
+    }
+
+    li:hover > a {
+      font-style: italic;
+    }
+
+    header img {
+      width: 1089px;
+      height: 200px;
+    }
+
+    .list {
+      width: 217.6px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .list:hover {
+      text-decoration: none;
+      background-color: aquamarine;
+    }
+
+    .list li {
+      width: 100%;
+      background-color: rgb(204, 210, 210);
+      line-height: 58px;
+      text-align: center;
+      list-style: none;
+      margin-bottom: 5px;
+    }
+
+    .list li a {
+      display: block;
+      color: rgba(8, 94, 92, 0.843);
+      text-decoration: none;
+    }
+
+    .list li a:hover {
+      background-color: #ddd;
+    }
+
+    .d1 {
+      margin-top: 15px;
+      border-bottom: 2px solid red;
+      /* Đường kẻ màu đỏ dày 2px */
+      padding-bottom: 5px;
+      /* Thêm khoảng cách giữa văn bản và đường kẻ nếu cần */
+    }
+
+    .d1 {
+      display: flex;
+      /* Sử dụng flexbox để căn chỉnh các phần tử bên trong */
+      justify-content: space-between;
+      /* Căn đều hai đầu, đẩy "xem tất cả" ra cuối hàng */
+      align-items: center;
+      /* Căn giữa theo chiều dọc nếu cần */
+      margin-bottom: 15px;
+      /* Tạo khoảng cách dưới tiêu đề nếu cần */
+    }
+
+    .view-all {
+      float: right;
+      /* Đẩy chữ "xem tất cả" ra cuối hàng */
+      color: gray;
+      /* Đổi màu chữ thành màu xám */
+      text-decoration: none;
+      /* Loại bỏ gạch chân của liên kết */
+      font-size: 14px;
+      /* Điều chỉnh kích thước chữ nếu cần */
+    }
+
+    .view-all:hover {
+      color: darkgray;
+      /* Màu xám đậm hơn khi hover, nếu muốn */
+    }
+
+    .d2 {
+      border-bottom: 2px solid red;
+      /* Đường kẻ màu đỏ dày 2px */
+      padding-bottom: 5px;
+      /* Thêm khoảng cách giữa văn bản và đường kẻ nếu cần */
+    }
+
+    .d2 {
+      display: flex;
+      /* Sử dụng flexbox để căn chỉnh các phần tử bên trong */
+      justify-content: space-between;
+      /* Căn đều hai đầu, đẩy "xem tất cả" ra cuối hàng */
+      align-items: center;
+      /* Căn giữa theo chiều dọc nếu cần */
+      margin-bottom: 15px;
+      /* Tạo khoảng cách dưới tiêu đề nếu cần */
+    }
+
+    .d3 {
+      border-bottom: 2px solid red;
+      /* Đường kẻ màu đỏ dày 2px */
+      padding-bottom: 1px;
+      /* Thêm khoảng cách giữa văn bản và đường kẻ nếu cần */
+    }
+
+    .d3 {
+      display: flex;
+      /* Sử dụng flexbox để căn chỉnh các phần tử bên trong */
+      justify-content: space-between;
+      /* Căn đều hai đầu, đẩy "xem tất cả" ra cuối hàng */
+      align-items: center;
+      /* Căn giữa theo chiều dọc nếu cần */
+      margin-bottom: 20px;
+      /* Tạo khoảng cách dưới tiêu đề nếu cần */
+    }
+  </style>
+
+  <body>
+    <div class="wrapper">
+      <nav>
+        <ul class="top-menu">
+          <li><a href="http://">Home</a></li>
+          <li><a href="http://">Contact</a></li>
+          <li><a href="http://">Services</a></li>
+          <li><a href="http://">About</a></li>
+          <li><a href="http://">Help</a></li>
+        </ul>
+      </nav>
+      <header>
+        <img src="../image/img1.jpg" alt="ảnh nền trang" />
+      </header>
+      <div class="content">
+        <div class="menu-left">
+          <ul class="list">
+            <li>
+              <a href="">
+                <h2 style="background-color: rgb(70, 157, 188)">
+                  Cơ cấu Tổ Chức
+                </h2>
+              </a>
+            </li>
+            <li>
+              <a href="">Lãnh Đạo</a>
+            </li>
+            <li>
+              <a href="">Các Phòng Ban</a>
+            </li>
+            <li>
+              <a href="">Các Khoa</a>
+            </li>
+            <li>
+              <a href="">Các viện</a>
+            </li>
+            <li>
+              <a href="">Các Trung Tâm</a>
+            </li>
+            <li>
+              <a href="">Các Phân Hiệu</a>
+            </li>
+            <li>
+              <a href="">Đoàn Thể</a>
+            </li>
+          </ul>
+        </div>
+        <div class="content-left">
+          <h3 class="d1">
+            THÔNG BÁO
+            <a href="#" class="view-all"><button>xem tất cả</button></a>
+          </h3>
+          <p style="margin-top: 20px">
+            Thông báo kế hoạch xét công nhận tốt nghiệp đợt tháng 10 năm
+          </p>
+          <p style="margin-bottom: 5px">
+            2024 30-08-2024 <button style="color: red">New</button>
+          </p>
+          <p style="margin-bottom: 50px">
+            Thông báo v/v nghỉ lễ Quốc Khánh năm 2024 07-08-2024
+          </p>
+          <h3 class="d2">
+            TIN TỨC - SỰ KIỆN
+            <a href="#" class="view-all"><button>xem tất cả</button></a>
+          </h3>
+          <img src="../image/img2.jpg" alt="ảnh content-left" style="width: " />
+          <p style="margin-top: 20px">
+            Hội nghị Khoa học trẻ lần 6 – năm 2024 với chủ đề “Khoa học công
+            nghệ... 22-08-2024 <button style="color: red">New</button>
+          </p>
+          <p style="margin-top: 5px">
+            Đại hội Đại biểu Đoàn TNCS Hồ Chí Minh Trường Đại học Công nghiệp
+            Thành... 14-08-2024
+          </p>
+        </div>
+        <div class="content-right">
+          <h3 class="d1">
+            TUYỂN SINH
+            <a href="#" class="view-all"><button>xem tất cả</button></a>
+          </h3>
+          <p style="margin-top: 20px">
+            Thông báo điểm trúng tuyển bậc Đại học hệ Chính quy
+          </p>
+          <p style="margin-bottom: 5px">năm 2024 bằng phương... 19-08-2024</p>
+          <p style="margin-bottom: 36px">
+            Thông báo tuyển sinh đào tạo liên thông từ trình độ cao<br />đẳng
+            lên trình... 16-08-2024
+          </p>
+          <h3 class="d3">
+            HỢP TÁC QUỐC TẾ
+            <a href="#" class="view-all"><button>xem tất cả</button></a>
+          </h3>
+          <img
+            src="../image/img3.jpg"
+            alt="ảnh content-left"
+            style="margin-top: auto"
+          />
+          <p style="margin-top: 20px">
+            Gần 300 sinh viên quốc tế hội tụ trong tuần lễ giao lưu văn hóa và
+            khoa... 27-08-2024 <button style="color: red">New</button>
+          </p>
+          <p style="margin-top: 5px">
+            Giảng viên khoa Ngoại Ngữ - IUH tham gia Đào tạo ngắn hạn tại xứ sở
+            lá... 22-08-2024 <button style="color: red">New</button>
+          </p>
+        </div>
+      </div>
+      <footer>
+        <div d4="">
+          <img src="../image/img.jpg" alt="ảnh nền chân trang web " />
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
