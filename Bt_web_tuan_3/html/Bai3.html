@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài tập 3 tuần 3</title>
+    <style>
+      * {
+        margin: 0 auto;
+        box-sizing: border-box;
+      }
+
+      body {
+        width: 960px;
+        border: 1px solid blue;
+        color: gray;
+      }
+
+      #header {
+        height: 70px;
+        background-color: #ac4b16;
+        position: relative;
+      }
+
+      #header h1 {
+        color: #807c00;
+        text-shadow: -5px -5px 4px white;
+        padding: 20px 0 0 20px;
+        margin-left: 25px;
+        letter-spacing: 5px;
+      }
+
+      #navi {
+        height: 40px;
+        border-bottom: 1px solid gray;
+      }
+
+      #navi ul li {
+        display: inline-flex;
+        list-style-type: none;
+        margin-top: 10px;
+        margin-right: 7px;
+        padding-left: 7px;
+        padding-right: 20px;
+        font-size: 20px;
+      }
+
+      #navi a {
+        text-decoration: none;
+        color: #ce8f6d;
+      }
+
+      #navi a:hover {
+        color: blue;
+      }
+
+      #section {
+        width: 68%;
+        float: left;
+        padding: 20px 40px 20px 10px;
+        border-right: 1px solid gray;
+      }
+
+      #aside {
+        width: 30%;
+        float: right;
+        margin: 5px 1%;
+        background-color: #f9f9f9;
+        padding: 20px;
+      }
+
+      #aside img {
+        float: left;
+        width: 95px;
+        margin-left: 20px;
+        margin-right: 10px;
+        border: 1px solid gainsboro;
+        padding: 10px;
+      }
+
+      h2 {
+        color: #9b812e;
+        word-spacing: 5px;
+        letter-spacing: 3px;
+      }
+
+      #footer {
+        clear: both;
+        background-image: url(../images/footer.png);
+        background-repeat: repeat-x;
+        background-size: 180px;
+        height: 70px;
+        padding: 25px 1px;
+        color: black;
+        font-size: 20px;
+        font-weight: bolder;
+        text-align: center;
+        word-spacing: 10px;
+      }
+
+      #banner {
+        height: 145px;
+        width: 958px;
+        background-image: url(../images/line.png);
+        background-size: cover;
+        background-position: auto;
+        background-repeat: no-repeat;
+        border-bottom: 1px transparent;
+      }
+
+      blockquote {
+        margin-left: 60px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        color: #b7b87b;
+        font-size: 19px;
+        font-weight: bolder;
+        font-style: italic;
+      }
+
+      input {
+        border: none;
+        border-bottom: 1px solid #000;
+        outline: none;
+        margin-left: 60px;
+        width: 500px;
+        margin-bottom: 20px;
+      }
+
+      button {
+        margin-left: 60px;
+        margin-top: 20px;
+        height: 30px;
+        width: 120px;
+        padding: 5px 10px;
+        background-color: #7e7f04;
+        color: white;
+        border: 1px black;
+      }
+
+      #list {
+        background-color: #faebd6;
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+        padding-left: 25px;
+      }
+
+      #list ul li {
+        list-style-type: square;
+        color: #9e522e;
+      }
+
+      #list h3 {
+        color: #5c3e39;
+        font-weight: bolder;
+        font-size: larger;
+        letter-spacing: 3px;
+        padding-top: 15px;
+        margin-bottom: 27px;
+      }
+
+      #info h3 {
+        color: #5c3e39;
+        font-weight: bolder;
+        font-size: larger;
+        letter-spacing: 3px;
+        padding-top: 15px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+      }
+
+      #info p {
+        padding-left: 20px;
+        word-spacing: 5px;
+        margin-right: 15px;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <h1>AUTUMN TRAVEL COMPANY</h1>
+    </div>
+    <nav id="navi">
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Products</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Order</a></li>
+      </ul>
+    </nav>
+    <div id="banner"></div>
+
+    <div id="section">
+      <h2>Sign up for membership benefits</h2>
+      <blockquote>
+        Our philisophical are transparency, respect, formality and
+        responsibility. Our stimulus is your enthusiasm. Our motto is your
+        satisfation.
+      </blockquote>
+      <div id="form">
+        <input type="text" name="Username" id="i1" placeholder="Username" />
+        <input type="text" name="Email" id="i2" placeholder="Email" />
+        <input type="text" name="Password" id="i3" placeholder="Password" />
+        <input
+          type="text"
+          name="Retype password"
+          id="i4"
+          placeholder="Retype password"
+        />
+        <button>SIGN ME UP</button>
+      </div>
+    </div>
+    <div id="aside">
+      <div id="list">
+        <h3>Links</h3>
+        <ul>
+          <li>Make your Own Tour</li>
+          <li>Maldives Tours</li>
+          <li>Nature & Adventure</li>
+          <li>Readymade Tours</li>
+          <li>Europe Tours</li>
+          <li>Rusia Tours</li>
+        </ul>
+      </div>
+      <div id="info">
+        <h3>More info</h3>
+        <img src="../images/leaf.png" alt="leaf" />
+        <p>
+          Our purpose is the client who gives to us the opportunites to serve
+          and to make known the reality arround the world.
+        </p>
+      </div>
+    </div>
+    <div id="footer">
+      <p>
+        &copy; 2017 Software Engineering Department | Test Date: 16 Sept 2017
+      </p>
+    </div>
+  </body>
+</html>
